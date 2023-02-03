@@ -1,0 +1,12 @@
+<p>for-objects works!</p>
+
+<div>
+  <hr>
+  <div *ngFor="let product of products">
+    <h5>{{product.price | currency}}</h5>
+    <h5>{{product.name}}</h5>
+    <img [src]="product.image" alt="" width="100">
+    <h2>{{product.category}}</h2>
+    <hr>
+  </div>
+</div>

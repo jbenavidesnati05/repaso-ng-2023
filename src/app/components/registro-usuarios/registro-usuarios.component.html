@@ -1,0 +1,9 @@
+<h1>{{titulo}}</h1>
+<form action="">
+  <label class="" for="nombre">Nombre</label>
+  <input class="form-control" type="text" name="nombre" >
+  <label class="" for="apellido">Apellido</label>
+  <input class="form-control " type="text" name="apellido">
+  <input class="btn btn-dark mt-4" value="Registrar" (click)="registrar()">
+</form>
+<p class="alert alert-dark mt-4" *ngIf="registrado">{{mensaje}}</p>
